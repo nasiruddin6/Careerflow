@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/src/app.js"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/send-daily-emails",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
